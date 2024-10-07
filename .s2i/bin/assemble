@@ -12,13 +12,7 @@ fi
 
 # Install 'powershift-cli[image]' package to add support for action hooks.
 
-pip config set global.trusted-host "pypi.org files.pythonhosted.org pypi.python.org" \
-    --trusted-host=pypi.python.org \
-    --trusted-host=pypi.org \
-    --trusted-host=files.pythonhosted.org
-
-
-pip install powershift-cli[image] --trusted-host pypi.org
+pip install powershift-cli[image] --trusted-host pypi.org  --trusted-host=pypi.python.org --trusted-host=files.pythonhosted.org
 
 # Run the build phase with support for action hooks.
 
